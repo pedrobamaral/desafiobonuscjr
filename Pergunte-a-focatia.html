@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pergunte à focatia</title>
+</head>
+<body>
+    <h1>Pergunte à focatia</h1>
+    
+    <img src="https://static.vecteezy.com/system/resources/previews/055/394/890/non_2x/cute-cartoon-seal-with-large-eyes-and-friendly-smile-free-png.png" alt="Foca de desenho animado sorrindo" width="200"> 
+    
+    <div>
+        <input type="text" class="input1"> ou <input type="text" class="input2">
+    </div>
+    <button type="button" onclick="escolhaDaFocatia()"> Perguntar </button>
+</body>
+</html>
+
+<style>
+    button {
+        background-color: rgb(62, 113, 184);
+    }
+    
+    body {
+	    background-color: #b3b2a7;
+	    text-align: center;
+}
+</style>
+
+<script>
+	function escolhaDaFocatia(){
+        var escolha = Math.floor(Math.random() * 10);
+        if (escolha%2)
+	alert("A focatia escolheu "+document.querySelector(".input1").value)
+else
+	alert("A focatia escolheu "+document.querySelector(".input2").value)
+        }
+</script>
